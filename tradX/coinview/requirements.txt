@@ -3,3 +3,5 @@ python-binance
 TA-Lib
 numpy
 backtrader
+gunicorn
+django-heroku
