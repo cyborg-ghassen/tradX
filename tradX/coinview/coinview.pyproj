@@ -37,39 +37,33 @@
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
-    <Compile Include="app\migrations\__init__.py" />
     <Compile Include="app\config.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="manage.py" />
-    <Compile Include="coinview\__init__.py" />
     <Compile Include="coinview\settings.py" />
     <Compile Include="coinview\urls.py" />
     <Compile Include="coinview\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
-    <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="coinview\" />
     <Folder Include="templates\" />
+    <Folder Include="templates\registration\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\content\login.css" />
     <Content Include="app\static\app\scripts\chart.js" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\site.css" />
     <Content Include="templates\index.html" />
-    <Content Include="templates\logged_out.html" />
-    <Content Include="templates\login.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="readme.html">
-      <SubType>WebBrowser</SubType>
-    </None>
+    <Content Include="templates\registration\logged_out.html" />
+    <Content Include="templates\registration\login.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
