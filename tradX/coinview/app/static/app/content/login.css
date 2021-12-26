@@ -1,0 +1,26 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgrey;
+}
+
+form {
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px;
+}
+
+form input[type=text], form input[type=password] {
+    padding: 5px;
+}
+
+form input[type=text]:focus {
+    border: none;
+}
+

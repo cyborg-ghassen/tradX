@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body > h1{
+    text-align: center;
+    width: 70%;
+    float: left;
+}
+
+body > a{
+    width: 20%;
+    float: right;
+    margin-top: 10px;
+}
+
+.container{
+    display: inline-block;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#chart{
+    margin-left: 10px;
+    float: left;
+}
+
+#my_balances {
+    width: 20%;
+    position: relative;
+    float: right;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #35056d;
+    color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.data{
+    width: 90%;
+    position: relative;
+    margin: 20px;
+}
+
+.time{
+    float: right;
+}
+
+.orders{
+    width: 99%;
+    margin: 10px;
+}
+
+.orders table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.orders td{
+    border-left: 1px solid black;
+}

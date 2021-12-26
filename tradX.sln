@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "tradX", "tradX.pyproj", "{CBCA4683-D930-4921-ABE6-D05DA79965E8}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "coinview", "tradX\coinview\coinview.pyproj", "{32A8CB48-9085-4FD6-AF6F-4B44D8B5FE92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCA4683-D930-4921-ABE6-D05DA79965E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCA4683-D930-4921-ABE6-D05DA79965E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A8CB48-9085-4FD6-AF6F-4B44D8B5FE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A8CB48-9085-4FD6-AF6F-4B44D8B5FE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A8CB48-9085-4FD6-AF6F-4B44D8B5FE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A8CB48-9085-4FD6-AF6F-4B44D8B5FE92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A0E6B88-4EFE-4F9E-957B-6D458AC49F57}
+	EndGlobalSection
+EndGlobal

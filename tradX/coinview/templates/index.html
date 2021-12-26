@@ -1,0 +1,81 @@
+{% load static %}
+<html>
+<head>
+    <title>TradX</title>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <link rel="stylesheet" href="{% static 'app/content/site.css' %}" />
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+    <a href="{% url 'logout' %}">Logout</a>
+    <div class="container">
+        <div id="chart"></div>
+
+        <div id="trades"></div>
+
+        <div id="my_balances">
+            <h2>Balances</h2>
+
+            <table>
+                {% for balance in my_balances %}
+                <tr style="color: #fff">
+                    <td>
+                        {{ balance.asset }}
+                    </td>
+                    <td>
+                        {{ balance.free }}
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </table>
+
+        </div>
+    </div>
+    <div class="data">
+        <p class="status">Account status: {{ status }}</p>
+        <p class="time">Time: {{ time }}</p>
+    </div>
+    <div class="orders">
+        <h3 class="status">Open orders:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Symbol</td>
+                    <td>Price</td>
+                    <td>Status</td>
+                    <td>Side</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order.orderId }}</td>
+                        <td>{{ order.symbol }}</td>
+                        <td>{{ order.price }}</td>
+                        <td>{{ order.status }}</td>
+                        <td>{{ order.side }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        //var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+
+        var tradeDiv = document.getElementById('trades')
+
+                // binanceSocket.onmessage = function (event) {
+                //     console.log(event.data);
+
+                //     var messageObject = JSON.parse(event.data)
+
+                //     tradeDiv.append(messageObject.p)
+
+                // }
+    </script>
+    <script src="{% static 'app/scripts/chart.js' %}"></script>
+</body>
+</html>
