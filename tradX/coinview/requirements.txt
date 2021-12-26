@@ -1,6 +1,5 @@
-django~=2.2
+django==3.2
 python-binance
-TA-Lib
 numpy
 backtrader
 gunicorn

@@ -35,7 +35,7 @@ var candleSeries = chart.addCandlestickSeries({
 	wickUpColor: 'rgba(255, 144, 0, 1)',
 });
 
-fetch('http://127.0.0.1:8000/history')
+fetch('https://blablablabl.herokuapp.com/history')
 	.then((r) => r.json())
 	.then((response) => {
 		console.log(response)

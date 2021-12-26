@@ -58,6 +58,7 @@
   <ItemGroup>
     <Content Include="app\static\app\content\login.css" />
     <Content Include="app\static\app\scripts\chart.js" />
+    <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\site.css" />
